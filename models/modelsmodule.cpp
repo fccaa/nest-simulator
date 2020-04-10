@@ -125,6 +125,7 @@
 #include "static_connection.h"
 #include "static_connection_hom_w.h"
 #include "stdp_connection.h"
+#include "stdp_tsodyks_connection.h"
 #include "stdp_connection_facetshw_hom.h"
 #include "stdp_connection_facetshw_hom_impl.h"
 #include "stdp_connection_hom.h"
@@ -307,6 +308,7 @@ ModelsModule::init( SLIInterpreter* )
   register_connection_model< StaticConnection >( "static_synapse" );
   register_connection_model< StaticConnectionHomW >( "static_synapse_hom_w" );
   register_connection_model< STDPConnection >( "stdp_synapse" );
+  register_connection_model< STDPTsodyksConnection >( "stdp_tsodyks_synapse" );
   register_connection_model< STDPConnectionHom >( "stdp_synapse_hom" );
   register_connection_model< STDPDopaConnection >( "stdp_dopamine_synapse" );
   register_connection_model< STDPFACETSHWConnectionHom >( "stdp_facetshw_synapse_hom" );
